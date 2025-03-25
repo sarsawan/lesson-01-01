@@ -1,0 +1,31 @@
+name: challenge
+on: push
+jobs:
+   job1: 
+      name: First
+      runs-on: ubuntu-latest
+      steps:
+      - name: step1
+        run: date
+   job2:
+      name: Second
+      runs-on: windows-latest
+      steps:
+      - name: step2
+        run: date
+   job3:
+      name: Third
+      runs-on: macos-latest
+      steps:
+      - name: step3
+        run: dat3
+   job4:
+      name: Fourth
+      runs-on: my-runner
+      needs: [job1, job2, job3]
+      steps:
+      - name: Forth
+        run: date
+        
+      
+        
