@@ -12,13 +12,13 @@ jobs:
       runs-on: windows-latest
       steps:
       - name: step2
-        run: date
+        run: Get-Date
    job3:
       name: Third
       runs-on: macos-latest
       steps:
       - name: step3
-        run: dat3
+        run: date
    job4:
       name: Fourth
       runs-on: my-runner
