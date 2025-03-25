@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
    job1:
       name: First Job
-      runs_on: ubuntu_latest
+      runs-on: ubuntu_latest
       steps:
       - name: Step one
         uses: actions/checkout@v2
@@ -12,7 +12,7 @@ jobs:
 
    job2:
       name: Second Job
-      runs_on: windows_latest
+      runs-on: windows_latest
       steps:
       - name: Step One
         uses: acions/checkout@v2
