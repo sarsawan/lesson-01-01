@@ -9,7 +9,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Step two
         run: env | sort
-
    job2:
       name: Second Job
       runs-on: windows_latest
